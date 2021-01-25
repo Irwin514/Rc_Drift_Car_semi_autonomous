@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0097)http://www.techmonkeybusiness.com/using-a-playstation-2-controller-with-your-arduino-project.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+  <title>Using A Playstation 2 Controller with your Arduino Project</title>
+<link href="./Using A Playstation 2 Controller with your Arduino Project_files/style.css" rel="stylesheet" type="text/css" media="screen">
+<link href="./Using A Playstation 2 Controller with your Arduino Project_files/pygments.css" rel="stylesheet" type="text/css" media="screen">
+<link href="http://www.techmonkeybusiness.com/" type="application/atom+xml" rel="alternate" title="TechMonkeyBusiness ATOM Feed">
+<link href="http://www.techmonkeybusiness.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="TechMonkeyBusiness RSS Feed">
+  
+  <!--[if IE]>
+  <style type="text/css"> 
+  .twoColFixRtHdr #mainContent { zoom: 1; }
+  </style>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+  <div id="header">
+  <h1><a href="http://www.techmonkeybusiness.com/">TechMonkeyBusiness</a></h1><a href="http://www.techmonkeybusiness.com/">
+  
+  </a></div><!-- end #header --><a href="http://www.techmonkeybusiness.com/">
+  
+  </a><div id="topMenu"><a href="http://www.techmonkeybusiness.com/">
+  
+    </a><ul><a href="http://www.techmonkeybusiness.com/">
+    	</a><li><a href="http://www.techmonkeybusiness.com/"></a><a href="http://www.techmonkeybusiness.com/index.html">Home</a></li>
+        <li>–</li>
+        <li><a href="http://www.techmonkeybusiness.com/archives.html">Archives</a></li>
+        
+    </ul>
+  
+  </div><!-- end #topMenu -->
+
+  <div id="sidebar">
+	<h3>Pages</h3>
+	<ul>
+            <li><a href="http://www.techmonkeybusiness.com/pages/about-me.html">About Me</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/pages/art-projects.html">Art Projects</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/pages/models-and-games.html">Models and Games</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/pages/random-stuff.html">Random Stuff</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/pages/tech-projects.html">Tech Projects</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/pages/tutorials.html">Tutorials</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/pages/whats-new.html">What's New</a></li>
+            <li><a href="http://www.techmonkeybusiness.com/">Welcome</a></li>
+	</ul>
+    <h3>Categories</h3>
+    <ul>
+		 <li><a href="http://www.techmonkeybusiness.com/category/art-projects.html">Art Projects</a></li>
+		 <li><a href="http://www.techmonkeybusiness.com/category/essays.html">Essays</a></li>
+		 <li><a href="http://www.techmonkeybusiness.com/category/food-and-wine.html">Food and Wine</a></li>
+		 <li><a href="http://www.techmonkeybusiness.com/category/models-and-games.html">Models and Games</a></li>
+		 <li><a href="http://www.techmonkeybusiness.com/category/random.html">Random</a></li>
+		 <li><a href="http://www.techmonkeybusiness.com/category/rc-gear.html">RC Gear</a></li>
+		 <li class="active"><a href="http://www.techmonkeybusiness.com/category/tech-projects.html">Tech Projects</a></li>
+		 <li><a href="http://www.techmonkeybusiness.com/category/tutorials.html">Tutorials</a></li>
+	</ul>
+      
+	<li>
+		<h3>Tags</h3>
+		<ul>
+		<tagstyle>
+			<a href="http://www.techmonkeybusiness.com/tag/essay.html">Essay, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/playstation.html">Playstation, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/godot.html">Godot, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/art.html">Art, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/3d-printing.html">3D Printing, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/instruments.html">instruments, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/energy.html">Energy, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/robotics.html">Robotics, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/recipe.html">Recipe, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/rc-aircraft.html">RC Aircraft, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/themes.html">Themes, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/ps2.html">PS2, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/vr.html">VR, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/mindstorms.html">Mindstorms, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/stopmotion.html">Stopmotion, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/serial.html">Serial, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/tools.html">Tools, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/rov.html">ROV, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/blender.html">Blender, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/freecad.html">FreeCAD, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/gis.html">GIS, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/alcohol.html">Alcohol, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/arduino.html">Arduino, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/qgis.html">QGIS, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/openscad.html">OpenSCAD, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/celestia.html">Celestia, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/models.html">Models, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/workshop.html">Workshop, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/music.html">music, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/inkscape.html">Inkscape, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/communication.html">Communication, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/esc.html">ESC, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/electronics.html">Electronics, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/csv.html">CSV, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/bread.html">Bread, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/textures.html">Textures, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/imagemagick.html">ImageMagick, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/servo.html">Servo, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/python.html">Python, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/camera.html">Camera, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/pressure.html">Pressure, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/simulators.html">Simulators, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/transmitters.html">Transmitters, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/thrusters.html">Thrusters, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/graphics.html">Graphics, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/sculptris.html">Sculptris, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/sensors.html">Sensors, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/seals.html">Seals, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/ceramics.html">Ceramics, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/renewable.html">Renewable, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/temperature.html">Temperature, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/planet.html">Planet, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/carrara.html">Carrara, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/turbocad.html">TurboCAD, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/science.html">science, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/scribus.html">Scribus, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/lego.html">Lego, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/map-making.html">Map Making, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/mbot.html">mBot, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/sketchup.html">SketchUp, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/games.html">games, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/gthumb.html">Gthumb, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/cake.html">Cake, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/i2c.html">I2C, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/sculpture.html">Sculpture, </a>
+			<a href="http://www.techmonkeybusiness.com/tag/travel.html">Travel, </a>
+		</tagstyle>
+		</ul>
+	</li>
+          
+  
+  </div><!-- end #sidebar -->
+
+  <div id="mainContent">
+  	
+ 
+
+
+<div class="blogItem">
+    
+      <h2><a href="http://www.techmonkeybusiness.com/using-a-playstation-2-controller-with-your-arduino-project.html">Using A Playstation 2 Controller with your Arduino Project</a></h2>
+      <h3>Le Mon 16 May 2016</h3>
+      
+  <p><a href="http://www.techmonkeybusiness.com/pdfs/PS2_to_Arduino_V1b.pdf"><img alt="Download the pdf button" src="./Using A Playstation 2 Controller with your Arduino Project_files/DownloadPDFButton.png"></a>  </p>
+<p><br></p>
+<p>Whenever I browsed through the website traffic statistics on my website, I noticed that a clear favourite was the <a href="http://www.techmonkeybusiness.com/ps2-controller-sketch-for-escs-and-stuff.html"><strong>"PS2 Controller Sketch for ESCs and Stuff"</strong></a> page.  I was keen to write an article for <a href="http://www.theshedmag.co.nz/online/"><strong><em>The Shed Magazine</em></strong></a> and so proposed an article on using the Playstation 2 Controller on Arduino based projects.  They accepted the idea and the subsequently written article was published in the February / March 2016 issue.  They have kindly given me permission to include the article on my website and provided me with a <strong>.pdf</strong> version of the article as printed for sharing through my website.</p>
+<p>The Article as printed can be downloaded here: <a href="http://www.techmonkeybusiness.com/pdfs/Shed_Magazine_Article_PS_controller.pdf"><strong>Shed_Magazine_Article_PS_controller.pdf</strong></a><br>
+The Article more or less as drafted in LibreOffice: <a href="http://www.techmonkeybusiness.com/pdfs/PS2_to_Arduino_V1b.pdf"><strong>PS2_to_Arduino_V1b.pdf</strong></a><br>
+Not that there is a difference between them other than the formatting.</p>
+<p><br>
+<img alt="Divider" src="./Using A Playstation 2 Controller with your Arduino Project_files/Divider.png"><br>
+<br></p>
+<p><br></p>
+<h1>Introduction</h1>
+<p><a href="http://www.techmonkeybusiness.com/images/MicroControllers/PS2_Demo_Circuit_Rig_Annotated-600dpi.jpg"><img alt="The components on a breadboard" src="./Using A Playstation 2 Controller with your Arduino Project_files/PS2_Demo_Circuit_Rig_Annotated-sml.jpg"></a>  </p>
+<p>It occurred to me one day as I was designing a little box with some joysticks and a few buttons to control a project of mine, that it looked familiar.  I suddenly asked myself why I was trying to build what was essentially a game controller from scratch when there were perfectly good game controllers around that included the inputs I was hoping to use as well as a heap of other buttons and features far beyond what I needed.  And they were cheaper than the small handful of components I was going to need to buy to make my own.  </p>
+<p>There has been millions of dollars poured into the development of the Playstation Controllers, and so they are very sophisticated, well designed, and robust pieces of equipment that are ideal for using as an interface for mechatronics projects.  Even though the Playstation 2 game console is now a rather outdated piece of equipment, the Playstation 2 Controller Clones are still made and can be purchased through Trademe extraordinarily cheaply.  </p>
+<p>Not only that, but they are easy to connect to an Arduino.  In addition to the two high quality joysticks, all the buttons are pressure sensitive, which adds even more functionality to the device.  </p>
+<p>This article demonstrates how you would connect a Playstation 2 Controller to an Arduino, and how easily it can be used to control various devices thanks to the PS2Xlib Arduino Library.</p>
+<p><br></p>
+<h1>Applications for PS2 Controllers</h1>
+<p>So where could you use a Playstation controller aside from on a Playstation console?  </p>
+<ul>
+<li>Controlling a wheeled or tracked vehicle's motion.  </li>
+<li>Controlling a robotic arm.  </li>
+<li>Interacting with a computer.  </li>
+<li>Controlling a pan and tilt camera mount.  </li>
+<li>DIY radio control system by using a bluetooth module, or radio module to transmit the commands from the Playstation 2 controller to another Arduino which is controlling the vehicle.  </li>
+<li>Then there is my own pet project which uses the Playstation 2 Controller as the pilot interface for an <a href="http://www.techmonkeybusiness.com/opensource-rov.html">ROV (aka. underwater drone)</a>.  </li>
+</ul>
+<p><br></p>
+<h1>Connecting the Playstation 2 Controller to the Arduino</h1>
+<p>There are two options for connecting the controller to the Arduino.  The method for masochists, is to cut the connector off and connect the wires into a row of terminal headers or directly solder them to some other plug.  The wire colours in the diagram below may help you identify which wire is which (The 7V – 9V rumble motor supply wire is often gray in colour).  A better option is to retain the plug and find a suitable socket.  In stark contrast to the ease of purchasing a controller, finding sockets is much harder.  It is possible to purchase sockets and breakout boards from the <a href="http://www.robotshop.com/en/ps2-connector.html">Robotshop</a> in the US.  Unfortunately there are no local suppliers.  The cheaper alternative if you are into a bit of hacking, is to extract the sockets from a Playstation 2 Controller to USB adapter (about $5 - $10 or so through <a href="http://www.trademe.co.nz/">Trademe</a>).  I have found the tabs on the back of the sockets to be quite fragile and it is worth embedding them in hot glue once you have soldered some wires to it.  </p>
+<p><br></p>
+<p><img alt="Sources of Playstation 2 Sockets" src="./Using A Playstation 2 Controller with your Arduino Project_files/PS2_Socket_Sources_Annotated.jpg"><br>
+<em>Sources of Playstation 2 Sockets</em>  </p>
+<p><br></p>
+<p>The illustration below shows the Playstation 2 plug, and the pin labels.  In order to connect to the Arduino we only need to connect the Data, Command, Ground, 3.3V, Attention, and Clock pins.  The rumble motor pin only needs to be connected to a 7-9V supply if rumble feedback is desired.  </p>
+<p><br></p>
+<p><img alt="Playstation 2 Plug Pins" src="./Using A Playstation 2 Controller with your Arduino Project_files/PS2_Plug_Connections.png"><br>
+<em>Playstation 2 Plug Pins</em>  </p>
+<p><br></p>
+<h1>The Software Side</h1>
+<p>Thanks to one Bill Porter an easy to use library is available which will allow users to use a Playstation 2 controller (or even a Guitar Hero controller) with an Arduino.  You can find it through Bill Porter's website: <a href="http://www.billporter.info/">“The Mind of Bill Porter”</a>. More specifically here is the link to his page with <a href="http://www.billporter.info/2010/06/05/playstation-2-controller-arduino-library-v1-0/">links to his Library</a> and the <a href="https://github.com/madsci1016/Arduino-PS2X">Library Source Code can be obtained from Github</a>, just click on the “<strong>Download ZIP</strong>” button on the right side of the page.  You can also download the PS2X library from the repository of libraries I have use in my various projects: <a href="http://www.techmonkeybusiness.com/arduino-library-collection.html"><strong>A Collection of Arduino Libraries Used in This Project</strong></a>.  Once you have the <strong><em>zip</em></strong> file downloaded, start your <em>Arduino Interface</em>, and navigate through the menu <strong><em>Sketch&gt;Import Library&gt;Add Library</em></strong>.  This will open a dialogue where you can navigate to your downloaded the <strong>PS2X Library zip</strong> file.  </p>
+<p><br></p>
+<p><img alt="Adding an Arduino Library" src="./Using A Playstation 2 Controller with your Arduino Project_files/Arduino_Adding_a_Library.jpg">  </p>
+<p><br></p>
+<p>The example sketch included with the library is a great demonstration of the capabilities of the library and makes use of all of the features of the Playstation 2 Controller.  The demonstration that is outlined in this article is not quite so sophisticated but covers the essentials needed to use a Playstation 2 Controller to actuate motors, servos, and switch things on and off. </p>
+<p>To use the library in an Arduino Sketch, it needs to be called using the following commands;  </p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;PS2X_lib.h&gt; </span><span class="cp"></span>
+<span class="n">PS2X</span> <span class="n">ps2x</span><span class="p">;</span> 
+</pre></div>
+
+
+<p>In the <strong><em>setup</em></strong> part of the sketch the command to let the Arduino know how the controller is connected to it, looks like;  </p>
+<div class="highlight"><pre><span></span><span class="n">ps2x</span><span class="p">.</span><span class="n">config_gamepad</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>  
+</pre></div>
+
+
+<p>where the numbers are the Arduino's digital pins where the Playstation 2 Controller pins are connected as below;  </p>
+<p><em>gamepad(clock, command, attention, data, pressure sensitivity enabled, rumble enabled)</em></p>
+<p>If you wanted to use the button pressure sensitivity feature, in the command line above you would set this to <strong>“true”</strong> and if you wanted the rumble motor available to provide feedback then you would set this to <strong>“true”</strong> too.  For use of the rumble feature please look at the example sketch that comes with the PS2X library.  </p>
+<p>Once the controller is set up, the Arduino loops through the sketch continuously.  Once per loop through, the Arduino needs to communicate with the controller to gather all input data.  This is done with the following command.  </p>
+<div class="highlight"><pre><span></span><span class="n">ps2x</span><span class="p">.</span><span class="n">read_gamepad</span><span class="p">();</span>  
+</pre></div>
+
+
+<p>Now we can read which control has been used.  The labels used in the PS2X library are very logical.  The diagram below shows each of the names for the buttons and sticks.  </p>
+<p><br></p>
+<p><a href="http://www.techmonkeybusiness.com/images/MicroControllers/PS2Lib_Control_Labels-600dpi.jpg"><img alt="Control names used in the PS2X Library." src="./Using A Playstation 2 Controller with your Arduino Project_files/PS2Lib_Control_Labels-sml.png"></a><br>
+<em>Control names used in the PS2X Library.</em>  </p>
+<p><br></p>
+<p>The buttons with the coloured shapes can also be referred to by the names <code>PSB_TRIANGLE</code>, <code>PSB_CIRCLE</code>, <code>PSB_CROSS</code>, and <code>PSB_SQUARE</code>.  </p>
+<p>To use the analogue pressure sensitivity on the keys the names are the same except for substituting “<code>PSAB</code>” for “<code>PSB</code>”.  So to allow a pressure reading from the Green Triangle button the name would be <code>PSAB_GREEN</code>  or <code>PSAB_TRIANGLE</code>.  </p>
+<p>The buttons can be pressed, pressed and held, or pressed with a varying pressure, so there are a number of <em>methods</em> that can be applied to the buttons and joystick.  The <em>methods</em> are; <code>Button Pressed</code>, <code>Button</code>, and <code>Analog</code>.  Here are some examples of how these are used.  </p>
+<ul>
+<li><code>ps2x.ButtonPressed(PSB_RED)</code>  is for a simple press of the <strong>red circle</strong> button.  </li>
+<li><code>ps2x.Button(PSB_PAD_DOWN)</code>  is for the <strong>down button on the pad</strong> being pressed and held.  </li>
+<li><code>ps2x.Analog(PSAB_CROSS)</code> is the command for measuring the pressure applied to the “<strong>X</strong>” button, if pressure sensitivity has been enabled.  As you can see the “<code>PSAB</code>”  form of the name has been used for the button.  </li>
+<li><code>ps2x.Analog(PSS_RY)</code> is the command to obtaining readings off the <strong>right analogue stick</strong> in the vertical direction.  </li>
+</ul>
+<p><br></p>
+<h1>Bringing it Together</h1>
+<p>To illustrate how this works, here is an example project.  It makes use of a DC motor, an electronic speed controller (in this case an RC car ESC), a series of servos, and an LED array designed to run on 7-12V.  If this were to be applied to a real project, it could be a car with steering, and two extra servos to control a pan and tilt camera mount.  A single LED would not need the transistor, but I have included a 12V LED array and transistor to illustrate that other high voltage and high current devices can be triggered by such a system.  </p>
+<p>The is nothing demanding about the sketch and it can run on any Arduino or Arduino clone.  </p>
+<p>Below is a diagram of the circuit and components.  The ESC supplies 5.6V to the servos through its control connector.  The ESC I have used has a switch on it that needs to be turned on before the motor will run and before any electricity is available to the servos.  Other than that, the only components are the three resistors for the connection to the Playstation 2 controller and the LED's transistor.  The capacitor is probably not necessary because the battery should be able to deliver a relatively smooth supply.  </p>
+<p><br></p>
+<p><a href="http://www.techmonkeybusiness.com/images/MicroControllers/PS2_Demo_Circuitv1-600dpi.jpg"><img alt="Circuit Diagram of the PS2 Controller Demonstration Rig." src="./Using A Playstation 2 Controller with your Arduino Project_files/PS2_Demo_Circuitv1-sml.png"></a>  </p>
+<p><br></p>
+<p>The controls we want to use are; a switch for the LED array, and the two analogue joysticks to actuate the servos and ESC.  Because the ESC “speaks” Servo, we just treat it as a servo in the code.  </p>
+<p><img alt="Playstation 2 controls used in this demonstration." src="./Using A Playstation 2 Controller with your Arduino Project_files/PS2_Demo_Controls.png"><br>
+<em>Playstation 2 controls used in this demonstration.</em>  </p>
+<p><br></p>
+<h1>Here is the sketch.</h1>
+<p>You can download the sketch from here: <a href="http://www.techmonkeybusiness.com/Code/PS2Controlv0.ino"><strong>PS2Controlv0.ino</strong></a>  </p>
+<div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">PS2Controlv0.ino</span>
+<span class="cm">21 September 2015</span>
+<span class="cm">Hamish Trolove - www.techmonkeybusiness.com</span>
+
+<span class="cm">This sketch illustrates the use of a Playstation 2 Controller to</span>
+<span class="cm">actuate a series of servos and an Electronic Speed Controller (ESC)</span>
+<span class="cm">as you might do with a vehicle.  An LED light is used to illustrate</span>
+<span class="cm">the use of the Playstation 2 Buttons.</span>
+
+<span class="cm">Pin assignments are:</span>
+
+<span class="cm">3.3V output to PS2 red pin</span>
+<span class="cm">5V output to 1Kohm pull up resistors for PS2.</span>
+<span class="cm">Pin D02 to PS2 brown pin (data)</span>
+<span class="cm">Pin D03 to PS2 yellow pin (attention)</span>
+<span class="cm">Pin D04 to PS2 orange pin (command)</span>
+<span class="cm">Pin D05 to PS2 blue pin (clock)</span>
+
+<span class="cm">Pin D06 to ESC Signal Pin  </span>
+<span class="cm">Pin D07 to Steering Servo Signal pin</span>
+<span class="cm">Pin D08 to Servo 1 Signal pin</span>
+<span class="cm">Pin D09 to Servo 2 Signal pin</span>
+
+<span class="cm">Pin D13 to LED Transistor Base</span>
+
+<span class="cm">The ESC servo connection supplies 5.6V to the servos.</span>
+
+<span class="cm">The coding pulls on the PS2X library developed by Bill Porter.</span>
+<span class="cm">See www.billporter.info for the latest from Bill Porter and to</span>
+<span class="cm">download the library.</span>
+
+<span class="cm">The controls used for this sketch are;</span>
+<span class="cm">Right Stick - X-axis = Steering Servo left/right, Y-axis = ESC forward/backward</span>
+<span class="cm">Left Stick - X-axis = Servo 2 left/right, Y-axis = Servo 1 left/right</span>
+
+<span class="cm">Triangle = Toggle the LED</span>
+<span class="cm">*/</span>
+
+
+<span class="cp">#include</span> <span class="cpf">&lt;Servo.h&gt;  //For driving the ESCs and Servos</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PS2X_lib.h&gt; // Bill Porter's PS2 Library</span><span class="cp"></span>
+
+<span class="n">PS2X</span> <span class="n">ps2x</span><span class="p">;</span>  <span class="c1">//The PS2 Controller Class</span>
+<span class="n">Servo</span> <span class="n">SteeringServo</span><span class="p">;</span>  <span class="c1">//Create servo object representing SteeringServo</span>
+<span class="n">Servo</span> <span class="n">ServoN1</span><span class="p">;</span>  <span class="c1">//Create servo object representing Servo 1</span>
+<span class="n">Servo</span> <span class="n">ServoN2</span><span class="p">;</span>  <span class="c1">//Create servo object representing Servo 2</span>
+<span class="n">Servo</span> <span class="n">ESCcontrol</span><span class="p">;</span>  <span class="c1">//Create servo object representing ESC</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">LEDpin</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>  <span class="c1">//green LED is on Digital pin 13</span>
+
+<span class="k">volatile</span> <span class="n">boolean</span> <span class="n">LEDHdlts</span><span class="p">;</span> <span class="c1">//LED headlights on/off toggle</span>
+
+<span class="kt">int</span> <span class="n">PlyStnRStickUpDn</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">//Value read off the PS2 Right Stick up/down.</span>
+<span class="kt">int</span> <span class="n">PlyStnRStickLtRt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">//Value read off the PS2 Right Stick left/right</span>
+<span class="kt">int</span> <span class="n">PlyStnLStickUpDn</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//Value read off the PS2 Left Stick up/down</span>
+<span class="kt">int</span> <span class="n">PlyStnLStickLtRt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// Value read off the PS2 Left Stick left/right</span>
+
+<span class="kt">int</span> <span class="n">ESCSetting</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span> <span class="c1">//Setting for the ESC (degrees).</span>
+<span class="kt">int</span> <span class="n">StrServoSetting</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span> <span class="c1">//Setting for the Steering Servo</span>
+<span class="kt">int</span> <span class="n">ServoN1Setting</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span> <span class="c1">//Setting for the Servo 1</span>
+<span class="kt">int</span> <span class="n">ServoN2Setting</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span> <span class="c1">//Setting for the Servo 2</span>
+
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">ps2x</span><span class="p">.</span><span class="n">config_gamepad</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+  <span class="c1">//setup pins and settings: GamePad(clock, command, attention, data, Pressures, Rumble)</span>
+  <span class="c1">//We have disabled the pressure sensitivity and rumble in this instance.</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">LEDpin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>  <span class="c1">//Sets the LEDpin to output</span>
+
+  <span class="n">LEDHdlts</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>  <span class="c1">//Sets the Headlights to off</span>
+  <span class="n">SteeringServo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span><span class="c1">// attaches the Steering Servo to pin 7</span>
+  <span class="n">ServoN1</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span><span class="c1">// attaches the Servo 1 to pin 8</span>
+  <span class="n">ServoN2</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span><span class="c1">// attaches the Servo 2 to pin 9</span>
+  <span class="n">ESCcontrol</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">2250</span><span class="p">);</span><span class="c1">// attaches the ESC to pin 6</span>
+  <span class="c1">//The ESC attachment command above also includes the signal settings</span>
+  <span class="c1">//for the maximum and minimum that the ESC will recognise.  This</span>
+  <span class="c1">//varies for different ESCs.</span>
+
+  <span class="c1">//Set all ESCs and Servos to a neutral 90 degree position</span>
+  <span class="c1">//this avoids the ESC trying to calibrate.</span>
+  <span class="n">ESCcontrol</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+  <span class="n">SteeringServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+  <span class="n">ServoN1</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+  <span class="n">ServoN2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span> <span class="c1">//Five second delay to allow ESC and controller to</span>
+               <span class="c1">// fully initialise.</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">ps2x</span><span class="p">.</span><span class="n">read_gamepad</span><span class="p">();</span> <span class="c1">//This needs to be called at least once a second</span>
+                        <span class="c1">// to get data from the controller.</span>
+
+  <span class="k">if</span><span class="p">(</span><span class="n">ps2x</span><span class="p">.</span><span class="n">ButtonPressed</span><span class="p">(</span><span class="n">PSB_GREEN</span><span class="p">))</span>  <span class="c1">//Triangle pressed</span>
+  <span class="p">{</span>
+    <span class="n">LEDHdlts</span> <span class="o">=</span> <span class="o">!</span><span class="n">LEDHdlts</span><span class="p">;</span> <span class="c1">//Toggle the LED light flag</span>
+  <span class="p">}</span>
+
+
+<span class="c1">//Analogue Stick readings</span>
+  <span class="n">PlyStnRStickUpDn</span> <span class="o">=</span> <span class="n">ps2x</span><span class="p">.</span><span class="n">Analog</span><span class="p">(</span><span class="n">PSS_RY</span><span class="p">);</span> <span class="c1">//Right Stick Up and Down</span>
+  <span class="n">PlyStnRStickLtRt</span> <span class="o">=</span> <span class="n">ps2x</span><span class="p">.</span><span class="n">Analog</span><span class="p">(</span><span class="n">PSS_RX</span><span class="p">);</span> <span class="c1">//Right Stick Left and Right</span>
+  <span class="n">PlyStnLStickUpDn</span> <span class="o">=</span> <span class="n">ps2x</span><span class="p">.</span><span class="n">Analog</span><span class="p">(</span><span class="n">PSS_LY</span><span class="p">);</span> <span class="c1">//left Stick Up and Down</span>
+  <span class="n">PlyStnLStickLtRt</span> <span class="o">=</span> <span class="n">ps2x</span><span class="p">.</span><span class="n">Analog</span><span class="p">(</span><span class="n">PSS_LX</span><span class="p">);</span> <span class="c1">//Left Stick Left and Right</span>
+
+<span class="c1">//Readings from PS2 Controller Sticks are from 0 to 255</span>
+<span class="c1">//with the neutral being 128.  The zero positions are to</span>
+<span class="c1">//the left for X-axis movements and up for Y-axis movements.</span>
+
+<span class="c1">//Variables to carry the settings for the ESCs and Servos</span>
+<span class="c1">//The values from the PS2 Sticks are mapped to 0 to 180 degrees </span>
+
+  <span class="n">ESCSetting</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">PlyStnRStickUpDn</span><span class="p">,</span><span class="o">-</span><span class="mi">256</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">179</span><span class="p">);</span>
+  <span class="n">StrServoSetting</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">PlyStnRStickLtRt</span><span class="p">,</span><span class="o">-</span><span class="mi">256</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">179</span><span class="p">);</span>
+  <span class="n">ServoN1Setting</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">PlyStnLStickUpDn</span><span class="p">,</span><span class="o">-</span><span class="mi">256</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">179</span><span class="p">);</span>
+  <span class="n">ServoN2Setting</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">PlyStnLStickLtRt</span><span class="p">,</span><span class="o">-</span><span class="mi">256</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">179</span><span class="p">);</span>
+
+
+<span class="c1">//Write it to the Servos or ESCs </span>
+
+  <span class="n">ESCcontrol</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">ESCSetting</span><span class="p">);</span>
+  <span class="n">SteeringServo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">StrServoSetting</span><span class="p">);</span>
+  <span class="n">ServoN1</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">ServoN1Setting</span><span class="p">);</span>
+  <span class="n">ServoN2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">ServoN2Setting</span><span class="p">);</span>
+
+
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LEDpin</span><span class="p">,</span><span class="n">LEDHdlts</span><span class="p">);</span> <span class="c1">//Light the LED based on headlights status flag</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>All things going well, when you connect this up and connect in the battery, you should be able to push the triangle button to light the LED and move the joysticks to move the servos and run the motor.  </p>
+<p>If it does not automatically go into <strong>Analogue Mode</strong> (as indicated by the <em>red light</em> on the controller), press the <strong>Analog button</strong>.  This will enable the joysticks on the controller and set things going.  </p>
+<p>The circuit and sketch are designed with a car ESC in mind.  This means a servo command of <em>90 degrees</em> is the <em>neutral position</em>.  The <code>ESCcontrol.write(90);</code> line in the <em>Setup</em> routine sets the throttle to neutral to allow the ESC to initialise.  <strong>If you are using a Radio Control Aircraft ESC you will need to initialise it at 0 degrees</strong>.  </p>
+<p>Depending on the quality of the Arduino you are using you may need to have the USB connected to the computer to power the Arduino.  Ordinarily the Arduino should be able to run on the 7.2v being supplied from the NiCd battery.  If you have an 11.1V LiPo battery, and ESC designed to suit it then you should not have any problems.  </p>
+<h1>Final Remark</h1>
+<p>With an input device as sophisticated as the Playstation 2 controller there are a wealth of different mechatronics projects that they can interface with.  The PS2X library makes it very easy to access the full range of functions available from the Playstation 2 controller.  Why reinvent the wheel when there are already ultra-high performance mags available for cheaper prices than a couple of components?  </p>	
+      
+      <h3 class="blogMeta">Par <a href="http://www.techmonkeybusiness.com/using-a-playstation-2-controller-with-your-arduino-project.html#">Hamish Trolove</a>, Catégorie : <a href="http://www.techmonkeybusiness.com/category/tech-projects.html">Tech Projects</a></h3>
+	<h3 class="blogMeta">Tags : <span><a href="http://www.techmonkeybusiness.com/tag/arduino.html">Arduino</a> / </span>
+<span><a href="http://www.techmonkeybusiness.com/tag/ps2.html">PS2</a> / </span>
+<span><a href="http://www.techmonkeybusiness.com/tag/playstation.html">Playstation</a> / </span>
+<span><a href="http://www.techmonkeybusiness.com/tag/esc.html">ESC</a> / </span>
+<span><a href="http://www.techmonkeybusiness.com/tag/servo.html">Servo</a> / </span>
+</h3>
+    
+    </div><!-- end #blogItem -->
+				
+				<!-- end #content -->
+  
+  </div><!-- end #mainContent -->
+
+<div class="clearfloat"></div>
+
+  <div id="footer">
+     
+    <p>Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org/">python</a>.
+  </p></div><!-- end #footer -->
+
+</div><!-- end #container -->
+
+</body></html>
