@@ -1,15 +1,9 @@
+CONCORDIA UNIVERSITY
+FACULTY OF ENGINEERING AND COMPUTER SCIENCE
+
+Course Outline:
+MECH 471  Microcontrollers for mechatronics
 # Rc_Drift_Car_semi_autonomous
-
-This folder contains all the codes required for the compulsory aspect 
-and one optional aspect of the MECH 471 project. 
-The entire work, done, was carried out by members of the group: 
-*UNDERGRADUATE: 
- 
-IRWIN LOPEZ [Student ID: 29372431] 
-TONG [Student ID: ]
-ASTIK [Student ID: ]
-MINA [Student ID: ]
-
 ************************************************************************************************** 
 
 *1. motor speed / car speed / cruse control control
